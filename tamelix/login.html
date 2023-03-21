@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    <link href="https://fonts.cdnfonts.com/css/times-new-roman" rel="stylesheet">
+                
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <a href="#">
+                <img src="images/logo.png" alt="logo" width="80px">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="movielist.html">Movies</a></li>
+                    <li><a href="serielist.html">Series</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="login">
+            <div class="cards-left">
+               <a href="index.html"><img src="images/15.jpg"></a> 
+            </div>
+            <div class="cards-right">
+                <h2>SIGN IN</h2>
+                <input type="email" name="email" class="box" placeholder="Enter Email">
+                <input type="password" name="password" class="box" placeholder="Enter Password">
+                
+                <label><input type="checkbox">Remember Me</label>
+                <input onclick="pop()" type="submit" value="SIGN IN" id="submit">
+
+                <div id="specialdesign">
+                    <i class="fa-solid fa-check"></i>
+                    <h1>Login Successfull!</h1>
+                    
+                    <a onclick="pop()" class="close">Close</a>
+                    
+                </div>
+
+                <script type="text/javascript">
+                    var c = 0;
+                    function pop(){
+                        if(c==0){
+                            document.getElementById("specialdesign").style.display = "block";
+                            c=1;
+                        }else {
+                            document.getElementById("specialdesign").style.display = "none";
+                            c=0;
+                        }
+                    }
+                </script>
+
+
+                <a href="#">Forget Passowrd?</a>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
